@@ -1,0 +1,268 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Job Portal System</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid ">
+                    <div class="header_bottom_border">
+                        <div class="row align-items-center">
+                            <div class="col-xl-3 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="logo.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-7">
+                                <div class="main-menu  d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="index.html">home</a></li>
+                                            <li><a href="jobs.html">Browse Job</a></li>
+                                        
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                                <div class="Appointment">
+                                    <div class="phone_num d-none d-xl-block">
+                                        <a href="login.html">Log in</a>
+                                    </div>
+                                    <div class="d-none d-lg-block">
+                                        <a class="boxed-btn3" href="post_a_job.html">Post a Job</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+        <!-- bradcam_area  -->
+    <div class="bradcam_area bradcam_bg_1">
+       
+    </div>
+    <!--/ bradcam_area  -->
+  <!-- ================ contact section start ================= -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Upload Your Resume</title>
+      <br><br>
+      <style>
+          
+          .container {
+              width: 90%;
+              max-width: 500px;
+              padding: 30px;
+              border-radius: 8px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          }
+          h1 {
+              text-align: center;
+              margin-bottom: 20px;
+          }
+          .form-group {
+              margin-bottom: 20px;
+          }
+          label {
+              display: block;
+              margin-bottom: 10px;
+              font-weight: bold;
+          }
+          input[type="file"] {
+              width: 100%;
+              padding: 10px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+          }
+          button {
+              background-color: #28a745;
+              color: white;
+              padding: 10px 15px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              width: 100%;
+              font-size: 16px;
+          }
+          button:hover {
+              background-color: #218838;
+          }
+  
+          /* Popup Message Styling */
+          #popupMessage {
+              display: none;
+              position: fixed;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              background-color: #4CAF50;
+              color: white;
+              padding: 20px;
+              border-radius: 8px;
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+              z-index: 1000;
+          }
+          #popupMessage button {
+              background-color: red;
+              color: white;
+              border: none;
+              padding: 8px 15px;
+              border-radius: 4px;
+              cursor: pointer;
+          }
+          #popupMessage button:hover {
+              background-color: darkred;
+          }
+      </style>
+  </head>
+  <body>
+      <div class="container">
+          <h1>Upload Your Resume</h1>
+          <form id="resumeForm">
+              <div class="form-group">
+                  <label for="resumeFile">Choose a file</label>
+                  <input type="file" id="resumeFile" name="resumeFile" accept=".pdf,.doc,.docx,.txt" required>
+              </div>
+              <button type="submit">Upload Resume</button>
+          </form>
+      </div>
+
+      <br><br>
+  
+      <!-- Popup Message -->
+      <div id="popupMessage">
+          <p>Your resume has been uploaded successfully!</p>
+          <button onclick="closePopup()">OKAY</button>
+      </div>
+  
+      <script>
+          document.getElementById('resumeForm').addEventListener('submit', function(event) {
+              event.preventDefault();
+              const resumeFile = document.getElementById('resumeFile').files[0];
+              
+              // Validate if a file is selected
+              if (!resumeFile) {
+                  alert('Please select a file to upload.');
+                  return;
+              }
+  
+              // Validate file type
+              const validTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'text/plain'];
+              if (!validTypes.includes(resumeFile.type)) {
+                  alert('Please upload a valid file (PDF, DOC, DOCX, or TXT).');
+                  return;
+              }
+  
+              // Show success popup
+              document.getElementById('popupMessage').style.display = 'block';
+  
+              // Redirect to home page after 2 seconds
+              setTimeout(function() {
+                  window.location.href = "index.html";  // Change to your actual home page URL
+              }, 2000);
+          });
+  
+          function closePopup() {
+              document.getElementById('popupMessage').style.display = 'none';
+          }
+      </script>
+  </body>
+  </html>
+  
+  
+  <!-- ================ contact section end ================= -->
+    <!-- footer start -->
+    <footer class="footer">
+        
+        <div class="copy-right_text wow fadeInUp" data-wow-duration="1.4s" data-wow-delay=".3s">
+            <div class="container">
+                <div class="footer_border"></div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center">
+                            @ Job Portal System <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Saniya Qureshi</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/ footer end  -->
+
+
+  <!-- JS here -->
+  <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+  <script src="js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/ajax-form.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/scrollIt.js"></script>
+  <script src="js/jquery.scrollUp.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/nice-select.min.js"></script>
+  <script src="js/jquery.slicknav.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/gijgo.min.js"></script>
+
+  <!--contact js-->
+  <script src="js/contact.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/jquery.form.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/mail-script.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
